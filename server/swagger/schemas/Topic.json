@@ -1,0 +1,22 @@
+{
+  "title": "Topic",
+  "required": [
+    "title",
+    "content",
+    "module"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "module": {
+      "type": "schemaobjectid"
+    },
+    "_id": {
+      "type": "string"
+    }
+  }
+}

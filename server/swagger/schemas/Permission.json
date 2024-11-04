@@ -1,0 +1,21 @@
+{
+  "title": "Permission",
+  "required": [
+    "name"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "_id": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Module",
+  "required": [
+    "title"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "course": {
+      "type": "schemaobjectid"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "_id": {
+      "type": "string"
+    }
+  }
+}

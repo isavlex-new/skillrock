@@ -1,0 +1,59 @@
+{
+  "title": "Question",
+  "required": [
+    "text",
+    "type"
+  ],
+  "properties": {
+    "text": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "multiple-choice",
+        "single-choice",
+        "true-false"
+      ]
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "isCorrect": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "text",
+          "isCorrect"
+        ]
+      }
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    "topic": {
+      "type": "schemaobjectid"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "_id": {
+      "type": "string"
+    }
+  }
+}
