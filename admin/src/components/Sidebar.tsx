@@ -30,6 +30,11 @@ const Sidebar = () => {
             title: 'Permissions',
             icon: <ListAltOutlinedIcon/>,
         },
+        {
+            segment: '/dashboard/checkout',
+            title: 'Checkout',
+            icon: <ListAltOutlinedIcon/>,
+        },
     ];
 
     const drawerWidth = 240;

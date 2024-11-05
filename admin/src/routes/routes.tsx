@@ -12,6 +12,7 @@ import Module from '../pages/modules/Module';
 import Topic from '../pages/topics/Topic';
 import Blog from '../pages/blog/Blog';
 import { createBrowserRouter } from 'react-router-dom';
+import Checkout from '../pages/checkout/Checkout';
 
 const routes : RouteObject[] = [
     {
@@ -30,10 +31,10 @@ const routes : RouteObject[] = [
         path: '/dashboard',
         element: <ProtectedRoute component={Dashboard} />,
         children: [
-            // {
-            //     path: 'blog',
-            //     Component: Blog,
-            // },
+            {
+                path: 'checkout',
+                Component: Checkout,
+            },
             {
                 path: 'users',
                 Component: Users,
